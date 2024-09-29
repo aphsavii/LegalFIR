@@ -1,0 +1,40 @@
+{
+  "name": "pdf-chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn  --env-file=.env src/index.ts",
+    "start": "tsc && node --env-file=.env lib/index.js"
+  },
+  "author": "Avinash Kumar",
+  "license": "ISC",
+  "description": "A chatbot that can answer questions from a PDF file",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@swc/core": "^1.7.26",
+    "@types/pdf-parse": "^1.1.4",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.15.0",
+    "@huggingface/inference": "^2.8.0",
+    "@langchain/community": "^0.3.1",
+    "@langchain/core": "^0.3.3",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/textsplitters": "^0.1.0",
+    "@types/express": "^4.17.21",
+    "@xenova/transformers": "^2.17.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "faiss": "^1.0.0",
+    "faiss-node": "^0.5.1",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^10.0.0"
+  }
+}
